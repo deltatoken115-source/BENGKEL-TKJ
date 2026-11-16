@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengkel TKJ</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0f172a, #0369a1);
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .layanan {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .layanan h2 {
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000010;
+        }
+
+        .card h3 {
+            color: #0284c7;
+            margin: 12px 0;
+        }
+
+        .icon {
+            font-size: 40px;
+        }
+
+        .tentang {
+            background: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>🔧 Bengkel TKJ</h2>
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#tentang">Tentang</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="beranda">
+        <h1>Bengkel TKJ Digital</h1>
+        <p>Solusi Komputer, Laptop, dan Jaringan Anda</p>
+        <a href="#layanan" class="btn">Lihat Layanan</a>
+    </section>
+
+    <section class="layanan" id="layanan">
+        <h2>Layanan Kami</h2>
+
+        <div class="container">
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>Servis Komputer</h3>
+                <p>Perbaikan komputer dan laptop.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🪟</div>
+                <h3>Instalasi OS</h3>
+                <p>Instalasi Windows dan software.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌐</div>
+                <h3>Jaringan</h3>
+                <p>Pemasangan LAN dan konfigurasi jaringan.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🖥️</div>
+                <h3>Rakit PC</h3>
+                <p>Perakitan komputer sesuai kebutuhan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tentang" id="tentang">
+        <h2>Tentang Bengkel TKJ</h2>
+        <p>
+            Bengkel TKJ adalah tempat praktik dan layanan
+            teknologi komputer serta jaringan.
+        </p>
+        <br>
+        <a href="https://wa.me/6281234567890" class="btn">
+            Hubungi Kami
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Bengkel TKJ | Teknik Komputer dan Jaringan</p>
+    </footer>
+
+</body>
+</html>
